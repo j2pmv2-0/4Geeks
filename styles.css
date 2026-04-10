@@ -1,35 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<div class="postcard">
-			<div class="postcard-header">
-				<h1>My Postcard</h1>
-				<img
-					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
-				/>
-			</div>
-
-			<div class="postcard-body">
-				<div class="body-left">
-					<p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academu Course!</p>
-					<p>This is so cool, can't wait to starting doing more stuff!</p>
-				</div>
-				<div class="body-right">
-					<input type="text" placeholder="Some Name" />
-					<input type="email" placeholder="Some Email" />
-					<input type="text" placeholder="Some Comment" />
-				</div>
-			</div>
-
-			<div class="postcard-footer">
-				<button>Send My Postcard</button>
-			</div>
-		</div>
-	</body>
-</html>
+body {
+	background: black;
+}
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+.postcard {
+	background: white;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+}
+.postcard-header {
+	display: flex;
+}
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+.postcard-header h1 {
+	width: 100%;
+	margin: 0%;
+}
+.postcard-body {
+	display: flex;
+}
+.body-left,
+.body-right {
+	padding: 10px;
+}
+.body-left p:first-child {
+	margin-top: none;
+	font-size: partial;
+}
+.body-right input {
+	border-top: none;
+	border-width: none;
+	border-left: none;
+	border-bottom: grey;
+}
+.postcard-footer {
+	display: flex;
+	justify-content: center;
+}
+.postcard-footer button {
+	text-align: center;
+	background-color: rgb(134, 134, 134);
+	padding: 10px;
+}
